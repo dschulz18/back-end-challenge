@@ -1,0 +1,21 @@
+mutation nameOfMutation {
+  createPerson(
+    email: "example@domain.com"
+    name: "Name"
+    addressNumber: 1
+    addressStreet: "Street"
+    addressCity: "City"
+    addressState: "State"
+  ) {
+    person {
+      email
+      name
+      address {
+        number
+        street
+        city
+        state
+      }
+    }
+  }
+}
